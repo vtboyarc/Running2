@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#trail_page{
+  background: #A8DBA8;
+  width: 800px;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+.trail_index p{ /*add a new trail*/
+  background: #CFF09E;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#picture {
+  width: 800px;
+  
+}
+
+.trail_index h1{ /*running trails and reviews*/
+  background: #A8DBA8;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 48px;
+}
+
+#trails th{ /*"trail name" and "# of reviews written"*/
+  background: #79BD9A;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 18px;
+  
+  
+}
+
+#trails td{ /*listed trail names and number of reviews for each*/
+  background: #79BD9A;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 16px; 
+}
+
+.trail_index h2{ /*"the current weather for Omaha, NE"*/
+  background: #3B8686;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.trail_index li{ /*weather details*/
+  background: #3B8686;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#forecast {
+  background: white;
+  
+}

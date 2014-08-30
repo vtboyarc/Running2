@@ -1,21 +1,16 @@
- <head>
-   <style>
-  
-   body {
-     background-color: 40BFB5;
-   }
-   
-   </style>
-  
+ <div id="trail_page">
+   <div class="trail_index">
+ 
+ <head>  
   <title>Running Trails</title>
-</head> 
+</head>  
 <body>
+  <p>
+    <a href="/trails/new">Add a new trail</a>
+  </p>
  <center>
-    <h2>Running Trails and Reviews</h2>
- <p>
-   <h3><a href="/trails/new">Add new trail for a review</a><h3>
- </p>
-
+   <img id="picture" src="/images/pic_for_running.png" alt="Pic For Running">
+<div id="trails">
    <table>
      <thead>
        <th>Trail Name</th>
@@ -31,42 +26,17 @@
      </tbody>
    </table>
 
-      <h4>The current weather for Omaha, NE:</h4>
+      <h2>The current weather for Omaha, NE:</h2>
+      <p>
         <li><%=@forecast.minutely.summary%></li>
         <li>The temperature is <%=@forecast.currently.temperature%> degrees Fahrenheit</li>
         <li>The relative humidity is <%=@forecast.currently.humidity*100%>%</li>
         <li>There is <%=@forecast.currently.precipProbability*100%>% chance of rain</li>
-        
+      </p>
+        <div id="forecast">
+        <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=41.2586100&lon=-95.9377900&name= Omaha"> </iframe>
         </center>
         
-        
-
-        
-         <!-- <head>
-           <style>
-
-           body {
-             background-color: 40BFB5;
-           }
-
-           </style>
-
-          <title>Running Trails</title>
-        </head>
-         <center>
-         <p>
-           <h2><a href="/trails/new">Add new trail for a review</a><h2>
-         </p>
-
-         <% @all_trails.each do |t| %>
-         <p><a href="/trails/<%= t.id %>"><%= t.trail_name || t.id %></a></p>
-         <% end %>
-
-
-              <h4>The current weather for Omaha, NE:</h4>
-                <li><%=@forecast.minutely.summary%></li>
-                <li>The temperature is <%=@forecast.currently.temperature%> degrees Fahrenheit</li>
-                <li>The relative humidity is <%=@forecast.currently.humidity*100%>%</li>
-                <li>There is <%=@forecast.currently.precipProbability*100%>% chance of rain</li>
-
-                </center> -->
+      </div>
+    </div>
+  </div>
