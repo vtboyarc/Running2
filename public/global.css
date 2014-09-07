@@ -5,11 +5,12 @@ html {
   box-sizing: inherit;
 }
 
+
 #trail_page{
   background: #A8DBA8;
-  width: 800px;
+  width: 100%; /*had 800px before*/
   margin: 0 auto 0 auto;
-  position: relative;
+  position: relative; /*difference with absolute or relative?*/
 }
 
 .trail_index p{ /*add a new trail*/
@@ -64,4 +65,37 @@ html {
 #forecast {
   background: white;
   
+}
+
+#review_page {
+   background: #A8DBA8;
+}
+
+#users_page {
+  background: #A8DBA8;
+  
+}
+
+#modal_content{
+  border: 3px solid #000000;
+  padding: 10px;
+  position: fixed;
+  background: #ffffff;
+  top: 0px;
+  width: 400px;
+  left: 45%;
+  margin-left: -200px; /* Half of the width. */
+  
+  z-index: 3;
+}
+
+#overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: 2;
 }

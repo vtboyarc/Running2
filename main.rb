@@ -11,6 +11,7 @@ require_relative "./routes/reviews.rb"
 require_relative "./routes/trails.rb"
 require_relative "./routes/users.rb"
 
+
 ForecastIO.api_key = 'bc799f9c215bbe4bd9f3fc497bfde58b'
 
 @forecast = ForecastIO.forecast(41.2586100, -95.9377900) #omaha coordinates
@@ -32,4 +33,3 @@ ForecastIO.api_key = 'bc799f9c215bbe4bd9f3fc497bfde58b'
  # $t4 = Trail.create({trail_name: "Tranquility Trail"})
  # $r4 = Review.create({content: "The longest trail in Omaha, has a soccer field. Wooded trails, lots of bikers.  Address: 12222 W Maple Rd, Omaha, NE 68164", user_id: 4, trail_id: 4})
 
- binding.pry

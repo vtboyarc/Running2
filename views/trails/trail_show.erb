@@ -20,6 +20,16 @@
 <% end %>
 </p>
 
+<a href="#" id="modal_link">See trail photo.</a>
+
+<div id="modal_content">
+    <p><a href="#" id="close_modal">Close</a>
+    <img src="/images/Zorinsky.jpg" alt="Zorinsky"> </p>
+  </div>
+  
+  <div id="overlay"></div>
+
+
 <h3>New Review</h3>
 
  <form action="/users/<%= @user.id %>/create_review" method="post">  
